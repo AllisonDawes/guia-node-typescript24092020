@@ -81,6 +81,7 @@ createConnection();
 
 # Dentro do arquivo ormconfig.json deixar a seguinte configuração para poder criar as migrations:
 
+```
 {
 "type": "postgres",
 "host": "localhost",
@@ -94,7 +95,7 @@ createConnection();
 "migrationsDir": "./src/database/migrations"
 }
 }
-
+```
 # Dentro do package.json incluir em scripts o comando:
 
 "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
