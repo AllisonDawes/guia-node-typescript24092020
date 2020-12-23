@@ -24,7 +24,7 @@ yarn tsc --init
 ```
 ### Criar pasta src com arquivo server.ts dentro.
 
-### Abrir arquivo tsconfig.json e configurar as seguintes configurações:
+### Abrir arquivo tsconfig.json e fazer as seguintes configurações:
 ```
 "outDir": "./dist"
 "rootDir": "./src"
@@ -45,7 +45,7 @@ yarn add -D ts-node-dev
 ```
 "scripts": {
   "build": "tsc",
-  "dev:server": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts"
+  "dev:server": "ts-node-dev --inspect --ignore-watch node_modules src/server.ts"
 },
 ```
 ### Criar pasta routes com os arquivos dentro:
@@ -99,8 +99,8 @@ createConnection();
   "host": "localhost",
   "port": 5432,
   "username": "postgres",
-  "password": "adbv2015",
-  "database": "bdsilos",
+  "password": "teste",
+  "database": "bdteste",
   "entities": ["./src/models/*.ts"],
   "migrations": ["./src/database/migrations/*.ts"],
   "cli": {
