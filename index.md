@@ -113,7 +113,7 @@ createConnection();
 "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
 ```
 
-### Rodar comando do typeorm para concluir configurações:
+### Rodar comando abaixo para confirmar se a cli do typeorm já está disponível:
 ```
 yarn typeorm
 ```
